@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">Testing android serial port...</string>
+    <string name="app_name">GnuIOTest</string>
+    <string name="SendBtn_label">Send</string>
+    <string name="CarrierDetect">CD</string>
+    
+    <drawable name="ind_on">#90E070</drawable>
+	<drawable name="ind_off">#404040</drawable>
+	
+	<style name="Ind">
+	<item name="android:textSize">18dp</item>	
+	<item name="android:textColor">#222</item>	
+	<item name="android:gravity">center</item>	
+	
+
+	
+	</style>
+	
+</resources>

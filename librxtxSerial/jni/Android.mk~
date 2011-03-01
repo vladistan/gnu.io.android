@@ -1,0 +1,27 @@
+LOCAL_PATH:= $(call my-dir)
+
+# ========================================================
+# librxtx
+# ========================================================
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := \
+	fuserImp.c \
+	SerialImp.c
+	
+LOCAL_C_INCLUDES += \
+	dalvik/libnativehelper/include/nativehelper \
+	$(KERNEL_HEADERS) \
+	$(LOCAL_PATH)
+
+LOCAL_CFLAGS += \
+	-fPIC
+
+LOCAL_MODULE:= librxtx
+LOCAL_PRELINK_MODULE := false
+LOCAL_SHARED_LIBRARIES := libdl  liblog
+
+include $(BUILD_SHARED_LIBRARY)
+
+# ========================================================
+include $(call all-makefiles-under,$(LOCAL_PATH))
