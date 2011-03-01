@@ -146,9 +146,7 @@ public class GNUIOTest extends Activity {
  	   }
  	   
 
-	   // Event Notification listener...
-	   
-		
+	  
 		
 		
 	   final TextView rcvData  = (TextView) findViewById(R.id.RecvData); 
@@ -350,7 +348,6 @@ public class GNUIOTest extends Activity {
 		else
 			v.setBackgroundDrawable(getResources().getDrawable(R.drawable.ind_off));	
 		v.invalidate();
-		toast( key + ( b ? "On" : "Off"));
 	}
 
 	// Show the toast notification..
